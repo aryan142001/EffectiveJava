@@ -1,0 +1,19 @@
+1) Use the == operator for same ref check
+
+2) Use the instanceOf operator for correct type
+
+3) Cast the argument to correct type
+
+4) For each significant field in the class check equality
+
+After writing equals method check if it is symmetric, transitive and consistent
+
+ChatGPT it best way
+
+
+When a super class has defined equals method use composition when want to create a type of subtype of it
+
+Note:-
+For primitive -> ==
+For Float and Double -> .equals() will affect performance
+Use @AutoValue framework

@@ -1,0 +1,7 @@
+Equal methods implements an equivalence relation. It has following props:-
+
+1. Reflexivity (a.equals(a))
+
+2. Symmetry (a.equals(b) same as b.equals(a))
+
+3. Transitivity (a.equals(b) and b.equals(c) and c.equals(a))

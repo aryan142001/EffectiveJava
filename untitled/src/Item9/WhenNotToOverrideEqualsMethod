@@ -1,0 +1,7 @@
+1. An instance of the class in inherently unique (Thread class)
+
+2. Logical equality test in a class is not required
+
+3. If super class has already overrided equals method
+
+4. The class is private or package-private

@@ -1,0 +1,3 @@
+Liskov Substitution principle states that :-
+Any imp. property of a type should also hold for all of its subtypes
+so that any method written for the type should work equally well on its subtypes.
