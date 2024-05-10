@@ -1,0 +1,9 @@
+A major cost of implementing Serializable is that it decreases the flexibility
+to change a class's implementation once it has been released
+
+Another cost is is increases the likelyhood of bugs and security holes
+
+It increases testing burder associated with releasing a new version of class
+
+classes ddesigned for inheritance should rarely implement Serializable, and
+inetrfaces should rarely extend it [Reason in The OOPS concepts being used]

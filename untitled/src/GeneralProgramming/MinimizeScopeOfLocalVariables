@@ -1,0 +1,2 @@
+Declare local variable where it is first used.
+Nearly every local variable declaration should contain an initializer.

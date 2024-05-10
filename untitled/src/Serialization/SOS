@@ -1,0 +1,9 @@
+Java Deserialzation can be a danger as deserializing untrusted streams
+can result in remote code execution, denial of service and other exploits.
+Application can be vulnerable to these attacks even if they did nothing wrong.
+
+Prefer alternatives to JAVA Serialization
+
+Use JSON or Protobuf instead
+
+If you have no other alternate for java serialization make use of java.io.ObjectInputFilter

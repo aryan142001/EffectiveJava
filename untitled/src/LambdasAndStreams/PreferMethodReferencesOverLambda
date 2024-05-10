@@ -1,0 +1,37 @@
+Before :-
+
+interface Converter<T, R> {
+    R convert(T input);
+}
+Converter<String, Integer> stringToIntegerConverter = (String s) -> Integer.parseInt(s);
+
+After :-
+
+Converter<String, Integer> stringToIntegerConverter = Integer::parseInt;
+
+What we achieved -> shorter, clearer code.
+
+But there are some exception where we should prefer lambdas;
+For eg:-
+
+1)// Using lambda expression to define a custom behavior
+Runnable customRunnable = () -> System.out.println("Executing custom action");
+
+// There's no equivalent method reference in this case
+
+2)List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+// Using lambda expression with additional logic
+numbers.forEach(n -> {
+    int squared = n * n;
+    System.out.println("Square of " + n + " is " + squared);
+});
+
+// There's no direct equivalent using a method reference because of the additional logic
+
+3)
+   // Using a lambda expression
+   names.forEach(name -> VeryLongClassName.veryLongMethodName(name));
+
+   // Using a method reference
+   names.forEach(VeryLongClassName::veryLongMethodName);

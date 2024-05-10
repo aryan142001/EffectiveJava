@@ -1,0 +1,6 @@
+Encapuslation is information hiding
+
+A well designed component hides all its implementation details ,cleanly separating its API from
+its implementation. Components then only communicate through API.
+
+Rule of thumb:- make each class or member as inaccessible as possible

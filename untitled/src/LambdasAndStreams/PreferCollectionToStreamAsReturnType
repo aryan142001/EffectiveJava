@@ -1,0 +1,2 @@
+Collection or an apt. subtype is generally the best return type for a public, sequence returning method
+because it is a subtype of ITERABLE and has a stream method

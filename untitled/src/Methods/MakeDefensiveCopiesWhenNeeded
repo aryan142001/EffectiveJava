@@ -1,0 +1,32 @@
+Defensive copying is a practice in Java where you create copies of mutable objects passed to a
+method to prevent the original object from being modified unintentionally. Here's an example
+illustrating defensive copying:
+
+import java.util.Date;
+
+public class Person {
+    private Date birthdate;
+
+    public Person(Date birthdate) {
+        // Make a defensive copy of the birthdate
+        this.birthdate = new Date(birthdate.getTime());
+    }
+
+    public Date getBirthdate() {
+        // Return a defensive copy of the birthdate
+        return new Date(birthdate.getTime());
+    }
+
+    public static void main(String[] args) {
+        Date originalBirthdate = new Date(946684800000L); // January 1, 2000
+        Person person = new Person(originalBirthdate);
+
+        // Try to modify the birthdate
+        Date modifiedBirthdate = person.getBirthdate();
+        modifiedBirthdate.setTime(System.currentTimeMillis()); // Set birthdate to current time
+
+        // Print original and modified birthdates
+        System.out.println("Original Birthdate: " + person.getBirthdate());
+        System.out.println("Modified Birthdate: " + modifiedBirthdate);
+    }
+}

@@ -1,0 +1,47 @@
+Historically, interfaces with a single abstract method were used as function types.
+Their instances, known as function objects, represent functions or actions
+
+Eg :- We replaced this:-
+
+interface Calculator {
+    int calculate(int a, int b);
+}
+Calculator addition = new Calculator() {
+    @Override
+    public int calculate(int a, int b) {
+        return a + b;
+    }
+};
+
+   with this :-
+
+   Calculator addition = (a, b) -> a + b;
+
+Eg->
+enum Operation {
+    ADD {
+        @Override
+        public int calculate(int a, int b) {
+            return a + b;
+        }
+    },
+    SUBTRACT {
+        @Override
+        public int calculate(int a, int b) {
+            return a - b;
+        }
+    },
+    MULTIPLY {
+        @Override
+        public int calculate(int a, int b) {
+            return a * b;
+        }
+    },
+}
+  became :-
+
+public enum Calculator {
+    ADD((a, b) -> a + b),
+    SUBTRACT((a, b) -> a - b),
+    MULTIPLY((a, b) -> a * b),
+}

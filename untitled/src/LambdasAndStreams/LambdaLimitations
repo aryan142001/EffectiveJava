@@ -1,0 +1,7 @@
+1)Only limited to functional interfaces :-
+ If you try to use lambda expressions with interfaces that have more than one abstract method,
+ you'll get a compilation error.
+
+2) It lacks documentation and name (computation is not self explanatory, do not put it in lambda)
+3) this.as ; this.wsd; "this" used to point to instance of class, cant be used in lambda
+4)

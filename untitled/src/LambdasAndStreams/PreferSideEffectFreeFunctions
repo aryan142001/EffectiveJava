@@ -1,0 +1,5 @@
+forEach() operation in java should be used to report the result of a stream computation,
+not to perform the computation
+
+It is customary and wise to statically import all members of Collectors because it makes stream pipelines
+more readable

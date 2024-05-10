@@ -1,0 +1,4 @@
+Stream were added to ease the task of performing bulk operations sequentially or in parallel
+
+Dont overuse streams
+Refrain from using streams to process char values

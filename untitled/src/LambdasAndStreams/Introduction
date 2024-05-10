@@ -1,0 +1,9 @@
+1)Functional Interface
+2)Lambdas
+3)Method Refernces
+
+All above were introduced in jdk to make it easier to create function objects
+
+Function Objects -> Objects of classes whose main purpose is to show actions/functionality
+
+Streams were also added to provide library support for processing sequence of data elements

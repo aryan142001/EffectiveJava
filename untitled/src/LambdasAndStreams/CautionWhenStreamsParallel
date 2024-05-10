@@ -1,0 +1,9 @@
+Parallelizing a pipeline is unlikely to increase its performance if the source
+is from Stream.iterate, or the intermediate operation limit is used.
+
+Do not parallelize stream pipelines indiscriminately
+
+Performance gains from parallelization are best on streams over ArrayList, HashMap, HashSet
+
+Not only can parallelizing a stream lead to poor performance, including liveness failures,
+it can lead to incorrect results and unpredicatable behaviour
